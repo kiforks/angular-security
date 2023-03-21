@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { LessonsService } from '../services/lessons/lessons.service';
+import { LessonsService } from '../../services/lessons/lessons.service';
 import { Observable } from 'rxjs';
-import { Lesson } from '../model/lesson';
+import { Lesson } from '../../interfaces/lesson';
 
 @Component({
 	selector: 'lessons',

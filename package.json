@@ -9,7 +9,7 @@
 		"ng": "ng",
 		"start": "ng serve --proxy-config ./proxy.json --ssl --ssl-key key.pem --ssl-cert cert.pem",
 		"start-server": "ts-node ./server/server.ts --secure",
-		"server": "nodemon  -w ./server --ext \".ts\" --exec \"npm run start-server\"",
+		"server": "nodemon -w ./server --ext \".ts\" --exec \"npm run start-server\"",
 		"hash": "node ./demos/hash.js",
 		"hash-salt": "node ./demos/hash-salt.js",
 		"verify-password": "node ./demos/verify-password.js",
@@ -49,6 +49,7 @@
 		"password-validator": "^4.0.0",
 		"rxjs": "6.3.3",
 		"rxjs-compat": "^6.0.0-rc.0",
+		"subsink": "^1.0.2",
 		"zone.js": "^0.8.14"
 	},
 	"devDependencies": {

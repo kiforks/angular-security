@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { LessonsComponent } from './lessons/lessons.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+import { LessonsComponent } from './components/lessons/lessons.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 import { RouterModule } from '@angular/router';
 import { routesConfig } from './routes.config';
 import { LessonsService } from './services/lessons/lessons.service';
