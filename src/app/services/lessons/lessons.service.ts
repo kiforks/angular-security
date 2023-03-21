@@ -1,26 +1,17 @@
-
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {Lesson} from "../model/lesson";
-
+import {Lesson} from "../../model/lesson";
+import { Observable } from "rxjs";
 
 @Injectable()
 export class LessonsService {
+    constructor(private http: HttpClient) {}
 
-    constructor(private http: HttpClient) {
-
-
-    }
-
-
-    loadAllLessons() {
+    public loadAllLessons(): Observable<Lesson[]> {
         return this.http.get<Lesson[]>('/api/lessons');
     }
 
-
-    findLessonById(id:number) {
+    public findLessonById(id:number): Observable<Lesson> {
         return this.http.get<Lesson>('/api/lessons/' + id);
     }
-
-
 }

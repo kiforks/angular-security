@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import {RouterModule} from "@angular/router";
 import {routesConfig} from "./routes.config";
-import {LessonsService} from "./services/lessons.service";
+import {LessonsService} from "./services/lessons/lessons.service";
 import {ReactiveFormsModule} from "@angular/forms";
 
 
