@@ -1,13 +1,11 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root',
 })
 export class AuthService {
-  constructor(private readonly httpClient: HttpClient) { }
+	constructor(private readonly httpClient: HttpClient) {}
 
-  public signUp(email: string, password: string) {
-
-  }
+	public signUp(email: string, password: string) {}
 }
